@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -7,16 +8,55 @@
   <link rel="stylesheet" href="css/style.css">
   <style>
     /* 담임 명단(우리 반 상인 지정)용 최소 스타일 */
-    .roster-row { display:flex; align-items:center; gap:10px; padding:10px 12px; border:1px solid #e2e8e2; border-radius:8px; margin-bottom:8px; background:#fff; }
-    .roster-row .nm { font-weight:700; color:#2d5f3f; flex:0 0 auto; }
-    .roster-row .badge { font-size:12px; font-weight:700; padding:2px 8px; border-radius:999px; }
-    .roster-row .badge.student { background:#eef3ee; color:#5a7a5a; }
-    .roster-row .badge.merchant { background:#e6f2ec; color:#0f8a7e; }
-    .roster-row .badge.staff { background:#fdeede; color:#e07a2c; }
-    .roster-row .spacer { flex:1; }
-    .roster-row button { flex:0 0 auto; }
+    .roster-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 12px;
+      border: 1px solid #e2e8e2;
+      border-radius: 8px;
+      margin-bottom: 8px;
+      background: #fff;
+    }
+
+    .roster-row .nm {
+      font-weight: 700;
+      color: #2d5f3f;
+      flex: 0 0 auto;
+    }
+
+    .roster-row .badge {
+      font-size: 12px;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 999px;
+    }
+
+    .roster-row .badge.student {
+      background: #eef3ee;
+      color: #5a7a5a;
+    }
+
+    .roster-row .badge.merchant {
+      background: #e6f2ec;
+      color: #0f8a7e;
+    }
+
+    .roster-row .badge.staff {
+      background: #fdeede;
+      color: #e07a2c;
+    }
+
+    .roster-row .spacer {
+      flex: 1;
+    }
+
+    .roster-row button {
+      flex: 0 0 auto;
+    }
   </style>
 </head>
+
 <body>
   <main class="app-screen">
     <div class="page-top">
@@ -67,8 +107,12 @@
       <div class="section" id="adminLinksSec" style="display:none;">
         <h2>바로가기 링크</h2>
         <div style="display: flex; gap: 8px;">
-          <a href="seed-test.html" class="mini" style="text-decoration: none; text-align: center; flex: 1; display: inline-flex; align-items: center; justify-content: center; height: 40px;">🌱 시드 테스트</a>
-          <a href="admin.html" class="mini" style="text-decoration: none; text-align: center; flex: 1; display: inline-flex; align-items: center; justify-content: center; height: 40px;">👥 명단 업로드</a>
+          <a href="seed-test.html" class="mini"
+            style="text-decoration: none; text-align: center; flex: 1; display: inline-flex; align-items: center; justify-content: center; height: 40px;">🌱
+            시드 테스트</a>
+          <a href="admin.html" class="mini"
+            style="text-decoration: none; text-align: center; flex: 1; display: inline-flex; align-items: center; justify-content: center; height: 40px;">👥
+            명단 업로드</a>
         </div>
       </div>
     </div>
@@ -76,4 +120,5 @@
 
   <script type="module" src="./js/manage.js"></script>
 </body>
+
 </html>
